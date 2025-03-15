@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Header */
+        header {
+                   background-color: #fff;
+                   color: #8B4513;
+                   padding: 15px 20px;
+                   display: flex;
+                   align-items: center;
+                   justify-content: space-between;
+                   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+               }
+       
+               /* Logo */
+               .logo-container {
+                   display: flex;
+                   align-items: center;
+               }
+       
+               .logo {
+                   width: 50px; /* Adjust logo size */
+                   height: auto;
+                   margin-right: 10px;
+               }
+       
+               .site-name {
+                   font-size: 24px;
+                   font-weight: bold;
+                   color: #8B4513;
+               }
+       
+               /* Navbar */
+               nav a {
+                   color: #8B4513;
+                   text-decoration: none;
+                   margin: 0 15px;
+                   font-weight: bold;
+               }
+       
+               nav a:hover {
+                   text-decoration: underline;
+               }
+       
+       
+           </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Abayatique Logo" class="logo">
+            <span class="site-name">Abayatique</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="product-details">
+            <img src="1.png" alt="Product 1">
+            <h2>Amani Bow Embroidered Abaya</h2>
+            <p>Rs. 2,799.00</p>
+            <label>Size:</label>
+            <select id="size">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+            <label>Quantity:</label>
+            <input type="number" id="qty" value="1" min="1">
+            <button onclick="addToCart(1, 'Amani Bow Embroidered Abaya', 2799)">Add to Cart</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
