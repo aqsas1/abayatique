@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product 1</title>
+    <title>Two Piece Abaya (Black  Jacket with colored Inner)</title>
     <link rel="stylesheet" href="style.css">
     <style>
         /* Header */
@@ -56,16 +56,19 @@
             <img src="logo.png" alt="Abayatique Logo" class="logo">
             <span class="site-name">Abayatique</span>
         </div>
+        <div class="menu-toggle">☰</div>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="/">Home</a>
+            <a href="about.html">About</a>
             <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
         </nav>
     </header>
+
     
     <main>
         <div class="product-details">
             <img src="3.png" alt="Product 1">
-            <h2>Two Piece Abaya (Black  Jacket with colored Inner )</h2>
+            <h2>Two Piece Abaya (Black  Jacket with colored Inner)</h2>
             <p>Rs. 3,599.00</p>
             <label>Size:</label>
             <select id="size">
@@ -79,6 +82,13 @@
             <button onclick="addToCart(3, 'Two Piece Abaya', 3599)">Add to Cart</button>
         </div>
     </main>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('nav').classList.toggle('show');
+    });
+    
+    
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
